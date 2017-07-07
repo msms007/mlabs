@@ -14,13 +14,13 @@ Usage
 import {MLabsComponentModule} from './datepicker-popup/datepicker-popup.module';
 
 ```
- <mlabs-datepicker-popup [showTodayBtn]="true">
-    <datepicker></datepicker>
- </mlabs-datepicker-popup>
+   <mlabs-datepicker-popup [showTodayBtn]="true">
+        <datepicker (selectionDone)="dateSelected($event)"></datepicker>
+   </mlabs-datepicker-popup>
  
  OR
  <ng-template #date>
-     <datepicker></datepicker>
+     <datepicker (selectionDone)="dateSelected($event)"></datepicker>
  </ng-template>
  
  <mlabs-datepicker-popup [showTodayBtn]="true" [body]='date'> 
@@ -29,6 +29,8 @@ import {MLabsComponentModule} from './datepicker-popup/datepicker-popup.module';
 ```
 Help
 -------------
+Sample Implementation is provided in the app.component.html
+
 This component is still under development.
 
 Development guidelines

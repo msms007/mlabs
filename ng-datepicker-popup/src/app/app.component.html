@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-md-12">
             <mlabs-datepicker-popup [showTodayBtn]="true">
-                <datepicker></datepicker>
+                <datepicker (selectionDone)="dateSelected($event)"></datepicker>
             </mlabs-datepicker-popup>
         </div>
     </div>
