@@ -29,7 +29,7 @@ import {MLabsComponentModule} from './datepicker-popup/datepicker-popup.module';
 ```
 Help
 -------------
-This is component is still under development.
+This component is still under development.
 
 Development guidelines
 ----------------------
