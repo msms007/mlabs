@@ -1,0 +1,16 @@
+<div class="datepicker-popup-container">
+    <i class="fa fa-calendar calendar-icon" (click)="showDatePicker = !showDatePicker;"></i>
+    <div class="dp-popup" *ngIf="showDatePicker">
+        <ng-container *ngIf="body; else projectContent">
+            <ng-container *ngTemplateOutlet="body"></ng-container>
+        </ng-container>
+        <ng-template #projectContent>
+            <ng-content></ng-content>
+        </ng-template>
+        <div class="clearfix" *ngIf="showTodayBtn">
+            <div style="text-align: center">
+                <button type="button" class="btn btn-sm btn-primary" (click)="today()">Today</button>
+            </div>
+        </div>
+    </div>
+</div>

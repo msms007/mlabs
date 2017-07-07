@@ -1,0 +1,26 @@
+:host daypicker {
+    table {
+        background: white;
+    }
+    .text-muted {
+        color: black;
+    }
+}
+
+.datepicker-popup-container {
+    display: inline-block;
+}
+
+.dp-popup {
+    position: absolute;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    font-size: 0.5em;
+    z-index: 5;
+}
+
+.fa-calendar {
+    cursor: pointer;
+}
